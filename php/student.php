@@ -6,6 +6,15 @@
     <title>Title</title>
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/student.js"></script>
+    <style>
+        input{
+            background: none;
+            border: none;
+        }
+        .form-horizontal{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div class="progress">
@@ -29,7 +38,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li class="active add"><a href="#">添加 <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -65,12 +74,44 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<form class="form-horizontal" style="width: 500px;margin-left: 200px">
+    <div class="form-group">
+        <label  class="col-sm-2 control-label">姓名</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="name" placeholder="请输入姓名">
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-2 control-label">性别</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="sex" placeholder="请输入性别">
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-2 control-label">年龄</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="age" placeholder="请输入年龄">
+        </div>
+    </div>
+    <div class="form-group">
+        <label  class="col-sm-2 control-label">专业</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="major" placeholder="请输入专业">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">提交</button>
+        </div>
+    </div>
+</form>
 <table class="table table-striped box">
     <tr>
         <td>姓名</td>
         <td>性别</td>
         <td>年龄</td>
         <td>专业</td>
+        <td>功能</td>
     </tr>
 
 </table>
